@@ -8,7 +8,6 @@ import allure
 
 @pytest.fixture
 def get_driver():
-    god = None
     driver = webdriver.Chrome()
     yield driver
     driver.quit()
